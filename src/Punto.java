@@ -1,35 +1,42 @@
 public class Punto {
     private int x, y;
+
     public Punto(int x, int y) {
         this.setX(x);
         this.setY(y);
     }
-    public Punto(int xy){
-        this(xy,xy);
+
+    public Punto(int xy) {
+        this(xy, xy);
     }
-    public Punto(){
-        this(0,0);
+
+    public Punto() {
+        this(0, 0);
     }
+
     public double modulo() {
-        double valor = 0;
-        return valor;
+        return Math.sqrt(this.x * this.x + this.y * this.y);
     }
+
     public double fase() {
-        double valor = 0;
-        return valor;
+        double aux = (double) (this.y) / this.x;
+        return Math.atan(aux);
     }
-    public void setX(int x) {  
+
+    public void setX(int x) {
         this.x = x;
     }
-    public void setY(int y){
+
+    public void setY(int y) {
         this.y = y;
     }
-    public int getX(){
+
+    public int getX() {
         return x;
     }
-    public int getY(){
+
+    public int getY() {
         return y;
 
     }
-
 }
