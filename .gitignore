@@ -1,0 +1,27 @@
+# Ignorar archivos compilados
+*.class
+
+# Ignorar carpetas de compilación / librerías
+bin/
+lib/
+
+# Ignorar archivos de registro
+*.log
+
+# Ignorar archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Ignorar archivos de IDE y configuración local
+*.iml
+*.ipr
+*.iws
+.idea/
+.vscode/
+*.classpath
+*.project
+.settings/
+
+# Archivos temporales del editor
+*~
+*.swp
